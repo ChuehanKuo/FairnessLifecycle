@@ -1,0 +1,17 @@
+Outcome,Category,N_Methods,AUROC_mean,TPR_gap_mean,Brier_mean
+EUROD,Pre-processing,5,0.7727,0.1663,0.1691
+EUROD,In-processing,13,0.7995,0.1021,0.1486
+EUROD,Post-processing,6,0.8296,0.0795,0.1363
+EUROD,Augmentation,2,0.83,0.1567,0.136
+LS,Pre-processing,5,0.7546,0.2269,0.173
+LS,In-processing,13,0.7559,0.1587,0.1732
+LS,Post-processing,6,0.8047,0.1148,0.1561
+LS,Augmentation,2,0.8043,0.2795,0.1561
+CASP,Pre-processing,5,0.8277,0.2093,0.1426
+CASP,In-processing,13,0.8543,0.1616,0.1374
+CASP,Post-processing,6,0.8827,0.1159,0.1206
+CASP,Augmentation,2,0.8823,0.2674,0.1205
+SRH,Pre-processing,5,0.837,0.13,0.1495
+SRH,In-processing,13,0.8729,0.107,0.1413
+SRH,Post-processing,6,0.8929,0.0861,0.126
+SRH,Augmentation,2,0.8927,0.1666,0.126

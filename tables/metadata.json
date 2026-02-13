@@ -1,0 +1,106 @@
+{
+  "version": "12",
+  "timestamp": "2026-02-13T16:21:43.238802",
+  "n_methods": 27,
+  "cross_validation": {
+    "n_folds": 5,
+    "stratification": "joint 4-outcome (with fallback)",
+    "aggregation": "mean \u00b1 SD (sample SD, ddof=1)"
+  },
+  "methods_by_category": {
+    "Pre-processing": [
+      "Reweighing",
+      "DIR",
+      "LFR",
+      "CorrelationRemover",
+      "SampleReweighting"
+    ],
+    "In-processing": [
+      "PrejudiceRemover",
+      "ExpGrad_DP",
+      "ExpGrad_EO",
+      "ExpGrad_TPR",
+      "GridSearch_TPR",
+      "GridSearch_EO",
+      "AdvDebiasing",
+      "FairGBM",
+      "FairConstraints",
+      "DecoupledClassifier",
+      "GerryFairClassifier",
+      "JTT",
+      "GroupDRO"
+    ],
+    "Post-processing": [
+      "ThreshOpt_TPR",
+      "ThreshOpt_EO",
+      "ThreshOpt_DP",
+      "EqOdds_PP",
+      "RejectOption",
+      "GroupCalibration"
+    ],
+    "Augmentation": [
+      "CTGAN",
+      "FairSMOTE"
+    ]
+  },
+  "baselines": {
+    "EUROD": "LGBM",
+    "LS": "LGBM",
+    "CASP": "LGBM",
+    "SRH": "LGBM"
+  },
+  "rankings": {
+    "EUROD": {
+      "best_tpr": "FairConstraints",
+      "best_eo": "ExpGrad_EO",
+      "best_dp": "FairConstraints",
+      "best_deployable": "FairConstraints",
+      "best_auroc": "GroupDRO"
+    },
+    "LS": {
+      "best_tpr": "ExpGrad_EO",
+      "best_eo": "ExpGrad_EO",
+      "best_dp": "ExpGrad_DP",
+      "best_deployable": "ExpGrad_EO",
+      "best_auroc": "CTGAN"
+    },
+    "CASP": {
+      "best_tpr": "ExpGrad_TPR",
+      "best_eo": "ThreshOpt_EO",
+      "best_dp": "FairConstraints",
+      "best_deployable": "ExpGrad_TPR",
+      "best_auroc": "GroupDRO"
+    },
+    "SRH": {
+      "best_tpr": "RejectOption",
+      "best_eo": "ExpGrad_EO",
+      "best_dp": "ThreshOpt_DP",
+      "best_deployable": "ExpGrad_TPR",
+      "best_auroc": "CorrelationRemover"
+    }
+  },
+  "config": {
+    "auroc_drop": 0.02,
+    "sens_floor": 0.5,
+    "spec_floor": 0.4,
+    "n_boot": 2000,
+    "seed": 42
+  },
+  "environment": {
+    "numpy": "2.0.2",
+    "pandas": "2.2.2",
+    "scikit-learn": "1.6.1",
+    "lightgbm": "4.6.0",
+    "xgboost": "3.1.3",
+    "aif360": "0.6.1",
+    "fairlearn": "0.13.0",
+    "shap": "0.50.0",
+    "sdv": "not installed",
+    "torch": "2.9.0+cu128"
+  },
+  "reproducibility": {
+    "random_seeds": "numpy, sklearn, torch all seeded with CFG.seed",
+    "bootstrap": "n_boot=2000 with failure tracking",
+    "post_processing_note": "AUROC not comparable for post-processing (uses baseline scores); use balanced_accuracy instead"
+  }
+}
