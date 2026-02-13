@@ -1,0 +1,41 @@
+Outcome,Method,Threshold_Strategy,Threshold_Value,Sensitivity,Specificity,TPR_gap
+EUROD,BASELINE,Balanced Acc (default),0.24,0.7459,0.7418,0.1928
+EUROD,BASELINE,Sensitivity ≥ 70%,0.28,0.6959,0.7907,0.2207
+EUROD,BASELINE,Prevalence-matched,0.263,0.7187,0.7717,0.2021
+EUROD,BASELINE,Fixed 0.5,0.5,0.4576,0.9281,0.2172
+EUROD,GerryFairClassifier,Balanced Acc (default),N/A,0.4142,0.9411,0.212
+EUROD,ThreshOpt_TPR,Balanced Acc (default),N/A,0.491,0.913,0.0968
+EUROD,ThreshOpt_EO,Balanced Acc (default),N/A,0.4969,0.9036,0.0659
+EUROD,ThreshOpt_DP,Balanced Acc (default),N/A,0.4693,0.9175,0.0313
+EUROD,EqOdds_PP,Balanced Acc (default),N/A,0.7205,0.7292,0.1215
+EUROD,RejectOption,Balanced Acc (default),N/A,0.6419,0.8351,0.0942
+LS,BASELINE,Balanced Acc (default),0.25,0.7754,0.6762,0.28
+LS,BASELINE,Sensitivity ≥ 70%,0.29,0.7215,0.7349,0.2925
+LS,BASELINE,Prevalence-matched,0.302,0.7082,0.7499,0.2986
+LS,BASELINE,Fixed 0.5,0.5,0.4578,0.9063,0.323
+LS,GerryFairClassifier,Balanced Acc (default),N/A,0.4258,0.921,0.3059
+LS,ThreshOpt_TPR,Balanced Acc (default),N/A,0.4281,0.9142,0.0207
+LS,ThreshOpt_EO,Balanced Acc (default),N/A,0.3919,0.9165,0.033
+LS,ThreshOpt_DP,Balanced Acc (default),N/A,0.39,0.9199,0.1548
+LS,EqOdds_PP,Balanced Acc (default),N/A,0.6727,0.6895,0.0581
+LS,RejectOption,Balanced Acc (default),N/A,0.6304,0.8096,0.024
+CASP,BASELINE,Balanced Acc (default),0.3,0.7763,0.8143,0.3006
+CASP,BASELINE,Sensitivity ≥ 70%,0.38,0.7052,0.8668,0.3069
+CASP,BASELINE,Prevalence-matched,0.3,0.7767,0.8136,0.3006
+CASP,BASELINE,Fixed 0.5,0.5,0.5959,0.9254,0.2909
+CASP,GerryFairClassifier,Balanced Acc (default),N/A,0.544,0.9397,0.2352
+CASP,ThreshOpt_TPR,Balanced Acc (default),N/A,0.5859,0.9157,0.0375
+CASP,ThreshOpt_EO,Balanced Acc (default),N/A,0.5749,0.9196,0.0441
+CASP,ThreshOpt_DP,Balanced Acc (default),N/A,0.5507,0.9119,0.2423
+CASP,EqOdds_PP,Balanced Acc (default),N/A,0.6314,0.8259,0.0869
+CASP,RejectOption,Balanced Acc (default),N/A,0.6896,0.866,0.0335
+SRH,BASELINE,Balanced Acc (default),0.4,0.7796,0.8213,0.2045
+SRH,BASELINE,Sensitivity ≥ 70%,0.52,0.693,0.8777,0.2176
+SRH,BASELINE,Prevalence-matched,0.368,0.7996,0.8043,0.2045
+SRH,BASELINE,Fixed 0.5,0.5,0.7093,0.87,0.2307
+SRH,GerryFairClassifier,Balanced Acc (default),N/A,0.6885,0.8795,0.2
+SRH,ThreshOpt_TPR,Balanced Acc (default),N/A,0.7234,0.8566,0.0478
+SRH,ThreshOpt_EO,Balanced Acc (default),N/A,0.7285,0.831,0.0394
+SRH,ThreshOpt_DP,Balanced Acc (default),N/A,0.6768,0.8739,0.1946
+SRH,EqOdds_PP,Balanced Acc (default),N/A,0.7112,0.8207,0.0748
+SRH,RejectOption,Balanced Acc (default),N/A,0.7911,0.8017,0.0155
