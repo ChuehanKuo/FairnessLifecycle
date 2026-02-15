@@ -415,9 +415,9 @@ def build():
     )
     p(
         "Stage 9 (Deployability): 11 methods are eliminated for requiring the protected attribute "
-        "at inference, including all 6 post-processing methods plus AdvDebiasing, "
-        "PrejudiceRemover, DecoupledClassifier, DIR, CorrelationRemover, and LFR. "
-        "Remaining: 11 methods."
+        "at inference, including all 5 remaining post-processing methods (GroupCalibration was "
+        "eliminated at Stage 3) plus AdvDebiasing, PrejudiceRemover, DecoupledClassifier, DIR, "
+        "CorrelationRemover, and LFR. Remaining: 11 methods."
     )
     p(
         "Stage 4 (Accuracy): 5 methods are eliminated for exceeding the 3 percentage point AUROC "
